@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TutorDataMenuController">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField layoutX="475.0" layoutY="46.0" prefHeight="41.0" prefWidth="284.0" text="Tutor Name">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Button layoutX="577.0" layoutY="545.0" mnemonicParsing="false" text="Change User">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="480.0" layoutY="545.0" mnemonicParsing="false" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="716.0" layoutY="545.0" mnemonicParsing="false" text="Enter">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
+         <image>
+            <Image url="@../../../Images/download-1.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">
+        <columns>
+            <TableColumn prefWidth="177.54215049743652" text="Criterion" />
+          <TableColumn prefWidth="37.95783233642578" text="(%)" />
+        </columns>
+      </TableView>
+      <TableView layoutX="384.0" layoutY="166.0" prefHeight="111.0" prefWidth="407.0">
+         <columns>
+            <TableColumn prefWidth="94.63079833984375" text="School" />
+            <TableColumn prefWidth="51.400482177734375" text="Grade" />
+            <TableColumn prefWidth="146.0994873046875" text="Alumn" />
+            <TableColumn prefWidth="42.14990234375" text="Age" />
+            <TableColumn prefWidth="74.35003662109375" text="Session/w" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
