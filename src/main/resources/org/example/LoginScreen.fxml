@@ -10,9 +10,9 @@
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginScreenController">
          <children>
             <Button layoutX="661.0" layoutY="501.0" mnemonicParsing="false" onAction="#switchToSelectFunctionMenu" prefHeight="55.0" prefWidth="95.0" text="Enter" />
-            <TextField layoutX="563.0" layoutY="287.0" prefHeight="74.0" prefWidth="157.0" text="Input User" />
+            <TextField fx:id="userInputTextBox" layoutX="583.0" layoutY="241.0" prefHeight="74.0" prefWidth="157.0" text="Input User" />
             <TextArea layoutX="487.0" layoutY="70.0" prefHeight="124.0" prefWidth="283.0" text="Welcome to the &quot;Educación Solidaria Data App&quot;. Please input your login below." />
-      <ImageView fitHeight="289.0" fitWidth="309.0" layoutX="96.0" layoutY="87.0">
+      <ImageView fitHeight="489.0" fitWidth="407.0" layoutX="45.0" layoutY="58.0">
          <image>
             <Image url="@../../../Images/download.png" />
          </image>
