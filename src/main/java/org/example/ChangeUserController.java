@@ -9,5 +9,7 @@ public class ChangeUserController {
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
+
+        //huih
     }
 }
