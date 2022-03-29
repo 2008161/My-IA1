@@ -11,6 +11,6 @@ public class LoginScreenController {
     public TextField userInputTextBox;
 @FXML
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) throws IOException {
-        App.setRoot("FunctionMenu");
+        App.setRoot("SelectFunctionMenu");
     }
 }

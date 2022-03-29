@@ -7,9 +7,7 @@ import java.io.IOException;
 public class ChangeUserController {
 
     @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
-
-        //huih
+    public void switchToSelectFunctionMenu() throws IOException {
+        App.setRoot("SelectFunctionMenu");
     }
 }

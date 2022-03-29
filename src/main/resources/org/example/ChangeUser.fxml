@@ -36,7 +36,7 @@
          <font>
             <Font size="36.0" />
          </font></TextField>
-      <Button layoutX="666.0" layoutY="516.0" mnemonicParsing="false" text="Enter">
+      <Button layoutX="666.0" layoutY="516.0" mnemonicParsing="false" onAction="#switchToSelectFunctionMenu" text="Enter">
          <font>
             <Font size="18.0" />
          </font></Button>
