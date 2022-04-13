@@ -27,24 +27,25 @@ public class SelectFunctionMenuController {
 
     @FXML
     private void switchToOptions() throws IOException {
-        //If the choicebox selection is 1
-        App.setRoot("Student Data Menu"); //go to the right window
 
-        App.setRoot("Student Data Leaderboard");
-        App.setRoot("Tutor Data Menu");
-        App.setRoot("Tutor Data Leaderboard");
+        //If the choicebox selection is 1
+        if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Menu")){
+            App.setRoot("StudentDataMenu"); //go to the Student Data Menu window
+        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Leaderboard"))
+        {
+            App.setRoot("StudentDataLeaderboard");
+        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Tutor Data Menu")) {
+            App.setRoot("TutorDataMenu");
+        }else{
+            App.setRoot("TutorLeaderboard");
+        }
         //else if it is 2, go to the other window etc.
     }
-
     public void switchToLoginScreen(ActionEvent actionEvent) throws IOException {
         App.setRoot("LoginScreen");
     }
 
     public void switchToChangeUser(ActionEvent actionEvent) throws IOException {
         App.setRoot("ChangeUser");
-    }
-
-    public void switchToOption1(ActionEvent actionEvent) throws IOException {
-        App.setRoot("");
     }
 }

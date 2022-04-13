@@ -8,9 +8,14 @@ import javafx.scene.control.TextField;
 
 public class LoginScreenController {
 
+    String hardCodedPassword = "RU2004";
+
     public TextField userInputTextBox;
 @FXML
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) throws IOException {
+
+    if(userInputTextBox.getText().equals(hardCodedPassword)){
         App.setRoot("SelectFunctionMenu");
+    }
     }
 }

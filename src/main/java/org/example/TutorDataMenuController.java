@@ -14,4 +14,11 @@ public class TutorDataMenuController {
 
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) {
     }
+    public void switchToLoginScreen(ActionEvent actionEvent) throws IOException {
+        App.setRoot("LoginScreen");
+    }
+
+    public void switchToChangeUser(ActionEvent actionEvent) throws IOException {
+        App.setRoot("ChangeUser");
+    }
 }
