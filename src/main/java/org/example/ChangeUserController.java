@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class ChangeUserController {
 
+
         public TextField userInputTextBox;
         @FXML
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) throws IOException {

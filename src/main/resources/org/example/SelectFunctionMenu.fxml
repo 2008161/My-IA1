@@ -16,12 +16,12 @@
       <ChoiceBox fx:id="windowChoiceBox" layoutX="409.0" layoutY="162.0" prefHeight="26.0" prefWidth="334.0" />
       <ImageView fitHeight="244.0" fitWidth="285.0" layoutX="61.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Images/download-1.png" />
+            <Image url="@../../profileB.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="183.0" fitWidth="217.0" layoutX="56.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Images/5c550a5a-02f5-45eb-a953-bd4f59df822a.jpg" />
+            <Image url="@../../logo.jpg" />
          </image>
       </ImageView>
    </children>

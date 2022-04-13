@@ -51,7 +51,7 @@
          </font></Button>
       <ImageView fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
          <image>
-            <Image url="@../../../Images/download-1.png" />
+            <Image url="@../../profileB.png" />
          </image>
       </ImageView>
       <TableView layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">

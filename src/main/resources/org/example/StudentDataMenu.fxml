@@ -51,7 +51,7 @@
          </font></Button>
       <ImageView fitHeight="270.0" fitWidth="298.0" layoutX="43.0" layoutY="267.0">
          <image>
-            <Image url="@../../../Images/5c550a5a-02f5-45eb-a953-bd4f59df822a.jpg" />
+            <Image url="@../../logo.jpg" />
          </image>
       </ImageView>
    </children>
