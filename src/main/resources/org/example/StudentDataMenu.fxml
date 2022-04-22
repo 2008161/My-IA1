@@ -32,11 +32,11 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField layoutX="30.0" layoutY="47.0" prefHeight="68.0" prefWidth="297.0" text="Student Data">
+      <TextField fx:id="sdmTitleTxt" layoutX="30.0" layoutY="47.0" prefHeight="68.0" prefWidth="297.0" text="Student Data">
          <font>
             <Font size="36.0" />
          </font></TextField>
-      <ChoiceBox layoutX="467.0" layoutY="47.0" prefHeight="26.0" prefWidth="306.0" />
+      <ChoiceBox fx:id="sdmDropBox" layoutX="467.0" layoutY="47.0" prefHeight="26.0" prefWidth="306.0" />
       <Button layoutX="541.0" layoutY="514.0" mnemonicParsing="false" text="Change User">
          <font>
             <Font size="18.0" />

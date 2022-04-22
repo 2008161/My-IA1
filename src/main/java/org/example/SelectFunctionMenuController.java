@@ -7,10 +7,13 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextArea;
 
 public class SelectFunctionMenuController {
 
+    public TextArea sfmMessageTxt;
     public ChoiceBox windowChoiceBox;
+
 
     ObservableList<String> options =
             FXCollections.observableArrayList(

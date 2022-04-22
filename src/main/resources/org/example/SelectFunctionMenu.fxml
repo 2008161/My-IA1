@@ -12,7 +12,7 @@
       <Button layoutX="332.0" layoutY="496.0" onAction="#switchToLoginScreen" prefHeight="51.0" prefWidth="114.0" text="Logout" />
       <Button layoutX="475.0" layoutY="496.0" onAction="#switchToChangeUser" prefHeight="49.0" prefWidth="125.0" text="Change User" />
       <Button fx:id="primaryButton2" layoutX="625.0" layoutY="496.0" onAction="#switchToOptions" prefHeight="48.0" prefWidth="137.0" text="Enter" />
-      <TextArea layoutX="412.0" layoutY="47.0" prefHeight="102.0" prefWidth="336.0" text="Welcome Mr/Ms. &quot;User&quot;. What would you like to do?" />
+      <TextArea fx:id="sfmMessageTxt" layoutX="412.0" layoutY="47.0" prefHeight="102.0" prefWidth="336.0" text="Welcome Mr/Ms. &quot;User&quot;. What would you like to do?" />
       <ChoiceBox fx:id="windowChoiceBox" layoutX="409.0" layoutY="162.0" prefHeight="26.0" prefWidth="334.0" />
       <ImageView fitHeight="244.0" fitWidth="285.0" layoutX="61.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
