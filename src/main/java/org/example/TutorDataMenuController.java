@@ -4,11 +4,14 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 
 public class TutorDataMenuController {
 
-    public ChoiceBox sdmDropBox;
+    public TextField tdmTitleTxt;
+    public ChoiceBox tdmDropBox;
+    public ImageView tdmLogo;
 
     @FXML
     private void switchToPrimary() throws IOException {

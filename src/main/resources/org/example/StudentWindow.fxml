@@ -33,7 +33,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField layoutX="475.0" layoutY="46.0" prefHeight="41.0" prefWidth="284.0" text="Student Name">
+      <TextField fx:id="swTitleTxt" layoutX="475.0" layoutY="46.0" prefHeight="41.0" prefWidth="284.0" text="Student Name">
          <font>
             <Font size="30.0" />
          </font></TextField>
@@ -49,24 +49,24 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
+      <ImageView fx:id="swProfileImage" fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
          <image>
             <Image url="@../../profileB.png" />
          </image>
       </ImageView>
-      <TableView layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">
+      <TableView fx:id="slCriterionTable" layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">
         <columns>
-            <TableColumn prefWidth="177.54215049743652" text="Criterion" />
-          <TableColumn prefWidth="37.95783233642578" text="(%)" />
+            <TableColumn fx:id="slCriterionTableCriterion" prefWidth="177.54215049743652" text="Criterion" />
+          <TableColumn fx:id="slCriterionTablePercentage" prefWidth="37.95783233642578" text="(%)" />
         </columns>
       </TableView>
-      <TableView layoutX="384.0" layoutY="166.0" prefHeight="111.0" prefWidth="407.0">
+      <TableView fx:id="swAttributesTable" layoutX="281.0" layoutY="200.0" prefHeight="296.0" prefWidth="475.0">
          <columns>
-            <TableColumn prefWidth="94.63079833984375" text="School" />
-            <TableColumn prefWidth="51.400482177734375" text="Grade" />
-            <TableColumn prefWidth="146.0994873046875" text="Tutor" />
-            <TableColumn prefWidth="42.14990234375" text="Age" />
-            <TableColumn prefWidth="74.35003662109375" text="Session/w" />
+            <TableColumn fx:id="swTableSchoolAttribute" prefWidth="86.0" text="School" />
+            <TableColumn fx:id="swTableGradeAttribute" prefWidth="81.5" text="Grade" />
+            <TableColumn fx:id="swTableTutorAttribute" prefWidth="94.5" text="Tutor" />
+            <TableColumn fx:id="swTableAgeAttribute" prefWidth="101.5" text="Age" />
+            <TableColumn fx:id="swTableSessionAttribute" prefWidth="110.5" text="Session/w" />
          </columns>
       </TableView>
    </children>

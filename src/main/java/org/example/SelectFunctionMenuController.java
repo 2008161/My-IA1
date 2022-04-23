@@ -14,7 +14,6 @@ public class SelectFunctionMenuController {
     public TextArea sfmMessageTxt;
     public ChoiceBox windowChoiceBox;
 
-
     ObservableList<String> options =
             FXCollections.observableArrayList(
                     "Student Data Menu",

@@ -32,7 +32,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField layoutX="493.0" layoutY="81.0" prefHeight="68.0" prefWidth="264.0" text="Change User">
+      <TextField fx:id="cuTitleTxt" layoutX="493.0" layoutY="81.0" prefHeight="68.0" prefWidth="264.0" text="Change User">
          <font>
             <Font size="36.0" />
          </font></TextField>
@@ -40,12 +40,12 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fitHeight="405.0" fitWidth="313.0" layoutX="74.0" layoutY="99.0">
+      <ImageView fx:id="cuUserProfileImage" fitHeight="405.0" fitWidth="313.0" layoutX="74.0" layoutY="99.0">
          <image>
             <Image url="@../../profileW.png" />
          </image>
       </ImageView>
-      <TextArea layoutX="458.0" layoutY="323.0" prefHeight="69.0" prefWidth="296.0" text="Input User Login">
+      <TextArea fx:id="cuInputUserLoginTxtBox" layoutX="458.0" layoutY="323.0" prefHeight="69.0" prefWidth="296.0" text="Input User Login">
          <font>
             <Font size="24.0" />
          </font>
