@@ -17,14 +17,15 @@ public class NewProfileController {
         public TextField userInputTextBox;
         @FXML
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) throws IOException {
-        App.setRoot("SelectFunctionMenu");
+            App.setRoot("SelectFunctionMenu");
+        }
 
-            public void switchToNewStudent(ActionEvent actionEvent) throws IOException{
+    public void switchToNewStudent(ActionEvent actionEvent) throws IOException {
                 App.setRoot("NewStudent");
             }
 
-            public void switchToNewTutor(ActionEvent actionEvent) throws IOException{
-                App.setRoot("NewTutor");
-            }
+
+    public void switchToNewTutor(ActionEvent actionEvent) throws IOException {
+            App.setRoot("NewTutor");
     }
 }
