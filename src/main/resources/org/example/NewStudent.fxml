@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +12,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TutorDataMenuController">
    <children>
-      <MenuBar prefHeight="28.0" prefWidth="799.0">
+      <MenuBar prefHeight="28.0" prefWidth="800.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -32,23 +31,24 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField fx:id="cuTitleTxt" layoutX="493.0" layoutY="81.0" prefHeight="68.0" prefWidth="264.0" text="Change User">
+      <TextField fx:id="nsTitleTxt" layoutX="577.0" layoutY="46.0" prefHeight="57.0" prefWidth="198.0" text="New Student">
          <font>
-            <Font size="36.0" />
+            <Font size="30.0" />
          </font></TextField>
-      <Button layoutX="666.0" layoutY="516.0" mnemonicParsing="false" onAction="#switchToSelectFunctionMenu" text="Enter">
+      <Button fx:id="nsEnterButton" layoutX="716.0" layoutY="545.0" mnemonicParsing="false" text="Enter">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fx:id="cuUserProfileImage" fitHeight="405.0" fitWidth="313.0" layoutX="74.0" layoutY="99.0">
+      <ImageView fx:id="nsProfileImage" fitHeight="425.0" fitWidth="404.0" layoutX="30.0" layoutY="109.0">
          <image>
-            <Image url="@../../profileW.png" />
+            <Image url="@../../profileB.png" />
          </image>
       </ImageView>
-      <TextArea fx:id="cuInputUserLoginTxtBox" layoutX="458.0" layoutY="323.0" prefHeight="69.0" prefWidth="296.0" text="Input User Login">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextArea>
+      <TextField fx:id="nsNameTxtBox" layoutX="577.0" layoutY="136.0" text="Name" />
+      <TextField fx:id="nsSchoolTxtBox" layoutX="577.0" layoutY="197.0" text="School" />
+      <TextField fx:id="nsGradeTxtBox" layoutX="577.0" layoutY="257.0" text="Grade" />
+      <TextField fx:id="nsTutorTxtBox" layoutX="577.0" layoutY="322.0" text="Tutor" />
+      <TextField fx:id="nsAgeTxtBox" layoutX="577.0" layoutY="380.0" text="Age" />
+      <TextField fx:id="nsSessionsTxtBox" layoutX="577.0" layoutY="444.0" text="Sessions/Week" />
    </children>
 </AnchorPane>

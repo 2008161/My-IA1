@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 
 import java.util.ArrayList;
 
-public class Student {
+public class Tutor {
 
     String name;
     String school;
@@ -12,9 +12,9 @@ public class Student {
     int age;
     int sessions;
 
-    public ArrayList<Student> students = new ArrayList<>();
+    public ArrayList<Tutor> students = new ArrayList<>();
 
-    public Student(String name, String school, String tutor, int age, int sessions) {
+    public Tutor(String name, String school, String tutor, int age, int sessions) {
         this.name = name;
         this.school = school;
         this.tutor = tutor;
@@ -63,7 +63,7 @@ public class Student {
     }
 
     public void SaveBtn(ActionEvent actionEvent){
-        students.add(new Student(sNameTxt.getText(),sSchoolTxt.getText(), sTutorTxt.getText(), Integer.parseInt(sAgeTxt.getText(), Integer.parseInt(sSessions.getText()));
+        students.add(new Tutor(sNameTxt.getText(),sSchoolTxt.getText(), sTutorTxt.getText(), Integer.parseInt(sAgeTxt.getText(), Integer.parseInt(sSessions.getText()));
     }
 }
 
