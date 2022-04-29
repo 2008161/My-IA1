@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TutorDataMenuController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TutorWindowController">
    <children>
       <MenuBar prefHeight="28.0" prefWidth="800.0">
         <menus>
@@ -37,7 +37,7 @@
          <font>
             <Font size="30.0" />
          </font></TextField>
-      <Button layoutX="577.0" layoutY="545.0" mnemonicParsing="false" text="Change User">
+      <Button layoutX="577.0" layoutY="545.0" mnemonicParsing="false" text="New Profile">
          <font>
             <Font size="18.0" />
          </font></Button>

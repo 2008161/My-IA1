@@ -62,8 +62,5 @@ public class Tutor {
         this.sessions = sessions;
     }
 
-    public void SaveBtn(ActionEvent actionEvent){
-        students.add(new Tutor(sNameTxt.getText(),sSchoolTxt.getText(), sTutorTxt.getText(), Integer.parseInt(sAgeTxt.getText(), Integer.parseInt(sSessions.getText()));
-    }
 }
 

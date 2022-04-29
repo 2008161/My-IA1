@@ -79,6 +79,5 @@ public class Student {
         this.sessions = sessions;
     }
 
-
 }
 
