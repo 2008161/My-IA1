@@ -13,12 +13,6 @@ public class Student {
     int sessions;
     ArrayList<CriterionScore> grades = new ArrayList<>();
 
-    public int getAveragePerformanceGrade() {
-        return averagePerformanceGrade; //this for each criterion
-    }
-
-    int averagePerformanceGrade; //this for each criterion
-
     public Student(String name, String school, String tutor, int age, int sessions) {
         this.name = name;
         this.school = school;
@@ -38,6 +32,27 @@ public class Student {
         }
         averagePerformanceGrade = per/counter; //this for each criterion
     }
+
+    public int getAveragePerformanceGrade() {
+        return averagePerformanceGrade; //this for each criterion
+    }
+
+    public int getAverageDisciplineGrade() {
+        return averageDisciplineGrade(); //this for each criterion
+    }
+
+    public int getAverageEngagementGrade() {
+        return averageEngagementGrade(); //this for each criterion
+    }
+
+    public int getAverageAttendanceGrade() {
+        return averageAttendanceGrade(); //this for each criterion
+    }
+
+    int averagePerformanceGrade; //this for each criterion
+    int averageDisciplineGrade; //this for each criterion
+    int averageEngagementGrade; //this for each criterion
+    int averageAttendanceGradeGrade; //this for each criterion
 
     public String getName() {
         return name;

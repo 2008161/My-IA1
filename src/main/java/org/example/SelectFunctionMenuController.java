@@ -30,16 +30,14 @@ public class SelectFunctionMenuController {
     @FXML
     private void switchToOptions() throws IOException {
 
-        //If the choicebox selection is 1
         if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Menu")){
             App.setRoot("StudentDataMenu"); //go to the Student Data Menu window
-        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Leaderboard"))
-        {
-            App.setRoot("StudentDataLeaderboard");
+        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Leaderboard")){
+            App.setRoot("StudentDataLeaderboard");// go to the Student Data Leaderboard window
         }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Tutor Data Menu")) {
-            App.setRoot("TutorDataMenu");
+            App.setRoot("TutorDataMenu"); // go to the Tutor Data Menu window
         }else{
-            App.setRoot("TutorLeaderboard");
+            App.setRoot("TutorLeaderboard"); // go to the Tutor Leaderboard Data window
         }
         //else if it is 2, go to the other window etc.
     }

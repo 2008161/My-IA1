@@ -23,9 +23,9 @@ public class LoginScreenController {
     @FXML
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) throws IOException {
 
-    if(lsUserInputTxt.getText().equals(hardCodedPassword)){
-        App.setRoot("SelectFunctionMenu");
-    }
+        if (lsUserInputTxt.getText().equals(hardCodedPassword)) { //If the user inputs the correct hard coded password
+            App.setRoot("SelectFunctionMenu"); //The user gets send into the corresponding window == Select Function Menu
+        }
     }
 
     public void initialize() throws IOException {
@@ -34,3 +34,4 @@ public class LoginScreenController {
         profileImage.setImage(image);
     }
 }
+

@@ -3,10 +3,10 @@ package org.example;
 public class CriterionScore {
 
    int performance;
-    int  discipline;
-        int    engagement;
-  int  attendance;
-              int      efficiency;
+   int discipline;
+   int engagement;
+   int attendance;
+   int efficiency;
 
     public CriterionScore(int performance, int discipline, int engagement, int attendance) {
         this.performance = performance;
