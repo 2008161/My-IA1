@@ -46,6 +46,6 @@ public class SelectFunctionMenuController {
     }
 
     public void switchToChangeUser(ActionEvent actionEvent) throws IOException {
-        App.setRoot("ChangeUser");
+        App.setRoot("NewProfile");
     }
 }

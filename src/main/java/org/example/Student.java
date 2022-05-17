@@ -31,6 +31,8 @@ public class Student {
             counter++;
         }
         averagePerformanceGrade = per/counter; //this for each criterion
+        averageDisciplineGrade = per / counter;
+        averageEngagementGrade = per / counter;
     }
 
     public int getAveragePerformanceGrade() {
@@ -38,16 +40,15 @@ public class Student {
     }
 
     public int getAverageDisciplineGrade() {
-        return averageDisciplineGrade(); //this for each criterion
+        return averageDisciplineGrade; //this for each criterion
     }
 
     public int getAverageEngagementGrade() {
-        return averageEngagementGrade(); //this for each criterion
+        return averageEngagementGrade; //this for each criterion
     }
 
-    public int getAverageAttendanceGrade() {
-        return averageAttendanceGrade(); //this for each criterion
-    }
+    //public int getAverageAttendanceGrade()
+       // return averageAttendanceGrade(); //this for each criterion
 
     int averagePerformanceGrade; //this for each criterion
     int averageDisciplineGrade; //this for each criterion
