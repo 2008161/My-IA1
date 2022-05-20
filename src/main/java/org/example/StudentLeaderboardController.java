@@ -18,9 +18,6 @@ public class StudentLeaderboardController {
     public TableColumn slTableScore;
     public TableColumn slTableTutor;
     public TableColumn slTableStudent;
-    public TableView slCriterionTable;
-    public TableColumn slCriterionTableCriterion;
-    public TableColumn slCriterionTablePercentage;
 
     @FXML
     private void switchToPrimary() throws IOException {

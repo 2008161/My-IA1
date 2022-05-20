@@ -12,6 +12,7 @@ public class Student {
     int age;
     int sessions;
     ArrayList<CriterionScore> grades = new ArrayList<>();
+    ArrayList<Student> characteristics = new ArrayList<>();
 
     public Student(String name, String school, String tutor, int age, int sessions) {
         this.name = name;
