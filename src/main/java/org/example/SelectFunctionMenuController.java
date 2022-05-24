@@ -39,7 +39,6 @@ public class SelectFunctionMenuController {
         }else{
             App.setRoot("TutorLeaderboard"); // go to the Tutor Leaderboard Data window
         }
-        //else if it is 2, go to the other window etc.
     }
     public void switchToLoginScreen(ActionEvent actionEvent) throws IOException {
         App.setRoot("LoginScreen");
