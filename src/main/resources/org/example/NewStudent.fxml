@@ -36,7 +36,7 @@
          <font>
             <Font size="30.0" />
          </font></TextField>
-      <Button fx:id="nsEnterButton" layoutX="716.0" layoutY="545.0" mnemonicParsing="false" text="Enter">
+      <Button fx:id="nsEnterButton" layoutX="716.0" layoutY="545.0" mnemonicParsing="false" onAction="#SaveBtn" text="Enter">
          <font>
             <Font size="18.0" />
          </font></Button>

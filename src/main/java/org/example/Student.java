@@ -26,7 +26,7 @@ public class Student {
 
     public void addGrades(CriterionScore cs) {
         this.grades.add(cs);
-        //dothe math to get the average...
+        //do the math to get the average...
         int per = 0; //this for each criterion
         int counter = 0;
         for (CriterionScore i : grades) {

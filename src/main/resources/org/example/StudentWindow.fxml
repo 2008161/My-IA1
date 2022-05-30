@@ -49,18 +49,18 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fx:id="swProfileImage" fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
+      <ImageView fx:id="swProfileImage" fitHeight="171.0" fitWidth="209.0" layoutX="48.0" layoutY="52.0">
          <image>
             <Image url="@../../profileB.png" />
          </image>
       </ImageView>
-      <TableView fx:id="slCriterionTable" layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">
+      <TableView fx:id="slCriterionTable" layoutX="305.0" layoutY="199.0" prefHeight="257.0" prefWidth="483.0">
         <columns>
-            <TableColumn fx:id="slCriterionTableCriterion" prefWidth="177.54215049743652" text="Criterion" />
-          <TableColumn fx:id="slCriterionTablePercentage" prefWidth="37.95783233642578" text="(%)" />
+            <TableColumn fx:id="slCriterionTableCriterion" minWidth="0.0" prefWidth="365.0" text="Criterion" />
+          <TableColumn fx:id="slCriterionTablePercentage" minWidth="0.0" prefWidth="247.0" text="(%)" />
         </columns>
       </TableView>
-      <TableView fx:id="swAttributesTable" layoutX="281.0" layoutY="200.0" prefHeight="296.0" prefWidth="475.0">
+      <TableView fx:id="swAttributesTable" layoutX="305.0" layoutY="117.0" prefHeight="71.0" prefWidth="483.0">
          <columns>
             <TableColumn fx:id="swTableSchoolAttribute" prefWidth="86.0" text="School" />
             <TableColumn fx:id="swTableGradeAttribute" prefWidth="81.5" text="Grade" />
@@ -69,5 +69,20 @@
             <TableColumn fx:id="swTableSessionAttribute" prefWidth="110.5" text="Session/w" />
          </columns>
       </TableView>
+      <TextField layoutX="48.0" layoutY="249.0" prefHeight="64.0" prefWidth="209.0" text="Criterion">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="48.0" layoutY="328.0" prefHeight="57.0" prefWidth="209.0" text="(%)">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <Button layoutX="48.0" layoutY="513.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="234.0" text="Add New Score">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

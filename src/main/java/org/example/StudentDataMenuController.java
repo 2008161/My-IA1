@@ -12,7 +12,6 @@ public class StudentDataMenuController {
     public ChoiceBox sdmDropBox;
     public TextField sdmTitleTxt;
 
-
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");

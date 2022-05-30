@@ -26,7 +26,6 @@ public class SelectFunctionMenuController {
         windowChoiceBox.setItems(options);
     }
 
-
     @FXML
     private void switchToOptions() throws IOException {
 

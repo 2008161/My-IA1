@@ -49,18 +49,18 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <ImageView fx:id="twProfileImage" fitHeight="130.0" fitWidth="143.0" layoutX="48.0" layoutY="52.0">
+      <ImageView fx:id="twProfileImage" fitHeight="170.0" fitWidth="209.0" layoutX="48.0" layoutY="52.0">
          <image>
             <Image url="@../../profileB.png" />
          </image>
       </ImageView>
-      <TableView fx:id="twCriterionTable" layoutX="25.0" layoutY="200.0" prefHeight="344.0" prefWidth="216.0">
+      <TableView fx:id="twCriterionTable" layoutX="308.0" layoutY="221.0" prefHeight="250.0" prefWidth="453.0">
         <columns>
-            <TableColumn fx:id="twCriterionTableCriterion" prefWidth="177.54215049743652" text="Criterion" />
-          <TableColumn fx:id="twCriterionPercentage" prefWidth="37.95783233642578" text="(%)" />
+            <TableColumn fx:id="twCriterionTableCriterion" prefWidth="368.0" text="Criterion" />
+          <TableColumn fx:id="twCriterionPercentage" minWidth="0.0" prefWidth="105.0" text="(%)" />
         </columns>
       </TableView>
-      <TableView fx:id="twSpecsTable" layoutX="287.0" layoutY="200.0" prefHeight="265.0" prefWidth="474.0">
+      <TableView fx:id="twSpecsTable" layoutX="308.0" layoutY="131.0" prefHeight="75.0" prefWidth="453.0">
          <columns>
             <TableColumn fx:id="twSpecsTableSchool" prefWidth="86.0" text="School" />
             <TableColumn fx:id="twSpecsTableGrade" prefWidth="85.5" text="Grade" />
@@ -69,5 +69,20 @@
             <TableColumn fx:id="twSpecsTableSession" prefWidth="108.5" text="Session/w" />
          </columns>
       </TableView>
+      <TextField layoutX="42.0" layoutY="248.0" prefHeight="64.0" prefWidth="209.0" text="Criterion">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="42.0" layoutY="329.0" prefHeight="57.0" prefWidth="209.0" text="(%)">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <Button layoutX="36.0" layoutY="513.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="234.0" text="Add New Score">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
