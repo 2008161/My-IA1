@@ -22,7 +22,6 @@ public class NewStudentController {
     public TextField nsAgeTxtBox;
     public TextField nsSessionsTxtBox;
     public TableView nsStudentTable;
-    public ObservableList<Student> students = FXCollections.observableArrayList();
     public TableColumn<Student, String> studentName = new TableColumn<>("Name");
     public TableColumn<Student, String> studentSchool = new TableColumn<>("School");
     public TableColumn<Student, Integer> studentGrade = new TableColumn("Grade");
@@ -33,7 +32,7 @@ public class NewStudentController {
     public void initialize() throws IOException {
         //Start doing the process as soon as the window opens
 
-        loadStudents();
+
 
         studentName.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
         studentName.setPrefWidth(50);
@@ -45,11 +44,8 @@ public class NewStudentController {
         studentSessions.setCellValueFactory(new PropertyValueFactory<Student, Integer>("sessions"));
 
         nsStudentTable.getColumns().addAll(studentName,studentSchool,studentGrade, studentTutor, studentAge, studentSessions);
-        for (Student s: students
-             ) {
-            System.out.println(s.getName());
-        }
-        nsStudentTable.setItems(students);
+
+        nsStudentTable.setItems(App.students);
 
         /**
         nsStudentTable.setRowFactory(rowClick -> {
@@ -73,25 +69,13 @@ public class NewStudentController {
          **/
     }
 
-    private void loadStudents() throws IOException {
-            //load students from saved file
-            //open and read Json for any previously saved data
-            Gson gson = new Gson();
-            try (Reader reader = new FileReader("students.json")) {
-                // convert JSON file to Java Object
-                ArrayList<Student> imports = gson.fromJson(reader, new TypeToken<ArrayList<Student>>() {
-                }.getType());
-                students = FXCollections.observableArrayList(imports);
-            }catch (FileNotFoundException e){
-                e.printStackTrace();
-        }
-    }
+
 
     public void SaveBtn(ActionEvent actionEvent) {
 
             Boolean exists = false;
             //Stop duplicate student profiles from being created
-                for (Student c: students) {
+                for (Student c: App.students) {
                     if (c.getName().equals(nsNameTxtBox.getText())) {
                         //if the name inputted for a new student is the same as that for a profile already created, the system will execute the action
                         exists = true;
@@ -101,16 +85,20 @@ public class NewStudentController {
                 }
 
             if(exists == false) {
-                students.add(new Student(nsNameTxtBox.getText(), nsSchoolTxtBox.getText(),  nsTutorTxtBox.getText(),Integer.parseInt(nsGradeTxtBox.getText()), Integer.parseInt(nsAgeTxtBox.getText()), Integer.parseInt(nsSessionsTxtBox.getText())));
+                App.students.add(new Student(nsNameTxtBox.getText(), nsSchoolTxtBox.getText(),  nsTutorTxtBox.getText(),Integer.parseInt(nsGradeTxtBox.getText()), Integer.parseInt(nsAgeTxtBox.getText()), Integer.parseInt(nsSessionsTxtBox.getText())));
             }
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        try(FileWriter writer = new FileWriter("contacts.json")) {
-            gson.toJson(students, writer);
+        try(FileWriter writer = new FileWriter("students.json")) {
+            gson.toJson(App.students, writer);
             System.out.println("Saved.");
         } catch (IOException e) {
             e.printStackTrace();
         }
         //https://mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/
         }
+
+    public void BackToMainScreen(ActionEvent actionEvent) throws IOException {
+        App.setRoot("SelectFunctionMenu");
     }
+}

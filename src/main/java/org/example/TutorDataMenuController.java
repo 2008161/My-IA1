@@ -14,9 +14,6 @@ public class TutorDataMenuController {
     public ImageView tdmLogo;
 
     @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
-    }
 
     public void switchToSelectFunctionMenu(ActionEvent actionEvent) {
     }

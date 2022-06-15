@@ -12,6 +12,11 @@ public class StudentDataMenuController {
     public ChoiceBox sdmDropBox;
     public TextField sdmTitleTxt;
 
+    public void initialize(){
+       sdmDropBox.setItems(App.students);
+        //1. add all students to drop down window,.
+        //2. when one student is selected show information
+    }
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
@@ -22,5 +27,11 @@ public class StudentDataMenuController {
 
     public void switchToChangeUser(ActionEvent actionEvent) throws IOException {
         App.setRoot("ChangeUser");
+    }
+
+    public void switchToDropboxChoice(ActionEvent actionEvent) throws IOException {
+        App.chosenStudent = sdmDropBox.getSelectionModel().getSelectedIndex();
+        App.setRoot("StudentWindow");
+
     }
 }

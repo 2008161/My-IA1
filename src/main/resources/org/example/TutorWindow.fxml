@@ -37,11 +37,11 @@
          <font>
             <Font size="30.0" />
          </font></TextField>
-      <Button layoutX="577.0" layoutY="545.0" mnemonicParsing="false" text="New Profile">
+      <Button layoutX="577.0" layoutY="545.0" mnemonicParsing="false" onAction="#switchToChangeUser" text="New Profile">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button layoutX="480.0" layoutY="545.0" mnemonicParsing="false" text="Logout">
+      <Button layoutX="480.0" layoutY="545.0" mnemonicParsing="false" onAction="#switchToLoginScreen" text="Logout">
          <font>
             <Font size="18.0" />
          </font></Button>
@@ -79,7 +79,7 @@
             <Font size="28.0" />
          </font>
       </TextField>
-      <Button layoutX="36.0" layoutY="513.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="234.0" text="Add New Score">
+      <Button layoutX="36.0" layoutY="513.0" mnemonicParsing="false" onAction="#addNewScoreBtn" prefHeight="64.0" prefWidth="234.0" text="Add New Score">
          <font>
             <Font size="28.0" />
          </font>

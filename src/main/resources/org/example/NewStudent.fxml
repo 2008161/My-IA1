@@ -36,7 +36,7 @@
          <font>
             <Font size="30.0" />
          </font></TextField>
-      <Button fx:id="nsEnterButton" layoutX="716.0" layoutY="545.0" mnemonicParsing="false" onAction="#SaveBtn" text="Enter">
+      <Button fx:id="nsEnterButton" layoutX="577.0" layoutY="545.0" mnemonicParsing="false" onAction="#SaveBtn" text="Enter">
          <font>
             <Font size="18.0" />
          </font></Button>
@@ -52,5 +52,10 @@
       <TextField fx:id="nsAgeTxtBox" layoutX="577.0" layoutY="380.0" text="Age" />
       <TextField fx:id="nsSessionsTxtBox" layoutX="577.0" layoutY="444.0" text="Sessions/Week" />
       <TableView fx:id="nsStudentTable" layoutX="34.0" layoutY="306.0" prefHeight="265.0" prefWidth="500.0" />
+      <Button fx:id="nsBackToMainScreen" layoutX="657.0" layoutY="545.0" mnemonicParsing="false" onAction="#BackToMainScreen" text="Main Screen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

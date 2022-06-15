@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Name",
+    "school": "School",
+    "tutor": "Tutor",
+    "grade": 3,
+    "age": 4,
+    "sessions": 1,
+    "grades": [],
+    "characteristics": [],
+    "averagePerformanceGrade": 0,
+    "averageDisciplineGrade": 0,
+    "averageEngagementGrade": 0,
+    "averageAttendanceGrade": 0
+  }
+]

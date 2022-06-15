@@ -14,6 +14,10 @@ public class Student {
     int sessions;
     ArrayList<CriterionScore> grades = new ArrayList<>();
     ArrayList<Student> characteristics = new ArrayList<>();
+    int averagePerformanceGrade =0; //this for each criterion
+    int averageDisciplineGrade=0; //this for each criterion
+    int averageEngagementGrade=0; //this for each criterion
+    int averageAttendanceGrade=0; //this for each criterion
 
     public Student(String name, String school, String tutor, int grade, int age, int sessions) {
         this.name = name;
@@ -28,35 +32,36 @@ public class Student {
         this.grades.add(cs);
         //do the math to get the average...
         int per = 0; //this for each criterion
+        int dis = 0;
+        int eng = 0;
+        int att = 0;
         int counter = 0;
         for (CriterionScore i : grades) {
             per = i.getPerformance(); //this for each criterion
             counter++;
         }
         averagePerformanceGrade = per / counter; //this for each criterion
-        averageDisciplineGrade = per / counter;
-        averageEngagementGrade = per / counter;
+        averageDisciplineGrade = dis / counter;
+        averageEngagementGrade = eng / counter;
+        averageAttendanceGrade = att / counter;
     }
 
     public int getAveragePerformanceGrade() {
-        return averagePerformanceGrade; //this for each criterion
+        return averagePerformanceGrade;
     }
 
     public int getAverageDisciplineGrade() {
-        return averageDisciplineGrade; //this for each criterion
+        return averageDisciplineGrade;
     }
 
     public int getAverageEngagementGrade() {
-        return averageEngagementGrade; //this for each criterion
+        return averageEngagementGrade;
     }
 
-    //public int getAverageAttendanceGrade()
-    // return averageAttendanceGrade(); //this for each criterion
+    public int getAverageAttendanceGrade() {
+        return averageAttendanceGrade;
+    }
 
-    int averagePerformanceGrade; //this for each criterion
-    int averageDisciplineGrade; //this for each criterion
-    int averageEngagementGrade; //this for each criterion
-    int averageAttendanceGrade; //this for each criterion
 
     public String getName() {
         return name;
@@ -104,6 +109,11 @@ public class Student {
 
     public void setSessions(int sessions) {
         this.sessions = sessions;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
 

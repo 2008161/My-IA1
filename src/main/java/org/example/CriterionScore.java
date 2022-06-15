@@ -13,7 +13,7 @@ public class CriterionScore {
         this.discipline = discipline;
         this.engagement = engagement;
         this.attendance = attendance;
-        this.efficiency = performance*discipline; //This needs fixing
+        this.efficiency = (performance+discipline+engagement+attendance)/4; //This needs fixing
     }
 
     public int getPerformance() {

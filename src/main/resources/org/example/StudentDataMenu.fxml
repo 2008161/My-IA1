@@ -37,15 +37,15 @@
             <Font size="36.0" />
          </font></TextField>
       <ChoiceBox fx:id="sdmDropBox" layoutX="467.0" layoutY="47.0" prefHeight="26.0" prefWidth="306.0" />
-      <Button layoutX="541.0" layoutY="514.0" mnemonicParsing="false" text="New Profile">
+      <Button layoutX="541.0" layoutY="514.0" mnemonicParsing="false" onAction="#switchToChangeUser" text="New Profile">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button layoutX="435.0" layoutY="512.0" mnemonicParsing="false" text="Logout">
+      <Button layoutX="435.0" layoutY="512.0" mnemonicParsing="false" onAction="#switchToLoginScreen" text="Logout">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button layoutX="683.0" layoutY="513.0" mnemonicParsing="false" text="Enter">
+      <Button layoutX="683.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchToDropboxChoice" text="Enter">
          <font>
             <Font size="18.0" />
          </font></Button>
