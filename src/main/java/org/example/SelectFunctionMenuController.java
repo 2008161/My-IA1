@@ -17,9 +17,9 @@ public class SelectFunctionMenuController {
     ObservableList<String> options =
             FXCollections.observableArrayList(
                     "Student Data Menu",
-                    "Student Data Leaderboard",
+                    "Student Leaderboard",
                     "Tutor Data Menu",
-                    "Tutor Data Leaderboard"
+                    "Tutor Leaderboard"
             );
 
     public void initialize(){
@@ -31,8 +31,8 @@ public class SelectFunctionMenuController {
 
         if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Menu")){
             App.setRoot("StudentDataMenu"); //go to the Student Data Menu window
-        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Leaderboard")){
-            App.setRoot("StudentDataLeaderboard");// go to the Student Data Leaderboard window
+        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("StudentLeaderboard")){
+            App.setRoot("StudentLeaderboard");// go to the Student Leaderboard window
         }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Tutor Data Menu")) {
             App.setRoot("TutorDataMenu"); // go to the Tutor Data Menu window
         }else{

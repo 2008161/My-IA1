@@ -20,9 +20,6 @@ public class StudentLeaderboardController {
     public TableColumn slTableStudent;
 
     @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
-    }
     public void switchToLoginScreen(ActionEvent actionEvent) throws IOException {
         App.setRoot("LoginScreen");
     }

@@ -37,11 +37,11 @@
             <Font size="36.0" />
          </font></TextField>
       <ChoiceBox fx:id="tlDropBox" layoutX="440.0" layoutY="47.0" prefHeight="26.0" prefWidth="319.0" />
-      <Button layoutX="548.0" layoutY="531.0" mnemonicParsing="false" text="New Profile">
+      <Button layoutX="548.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToChangeUser" text="New Profile">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button layoutX="453.0" layoutY="531.0" mnemonicParsing="false" text="Logout">
+      <Button layoutX="453.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToLoginScreen" text="Logout">
          <font>
             <Font size="18.0" />
          </font></Button>

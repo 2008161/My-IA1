@@ -26,5 +26,19 @@
     "averageDisciplineGrade": 0,
     "averageEngagementGrade": 0,
     "averageAttendanceGrade": 0
+  },
+  {
+    "name": "Javier",
+    "school": "San Ignacio",
+    "tutor": "Patrick",
+    "grade": 4,
+    "age": 13,
+    "sessions": 1,
+    "grades": [],
+    "characteristics": [],
+    "averagePerformanceGrade": 0,
+    "averageDisciplineGrade": 0,
+    "averageEngagementGrade": 0,
+    "averageAttendanceGrade": 0
   }
 ]
