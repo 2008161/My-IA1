@@ -47,7 +47,7 @@ public class NewStudentController {
 
         nsStudentTable.setItems(App.students);
 
-        /**
+
         nsStudentTable.setRowFactory(rowClick -> {
             TableRow<Student> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
@@ -66,7 +66,7 @@ public class NewStudentController {
             });
             return rowClick;
         });
-         **/
+
     }
 
 

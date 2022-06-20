@@ -31,7 +31,7 @@ public class SelectFunctionMenuController {
 
         if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Data Menu")){
             App.setRoot("StudentDataMenu"); //go to the Student Data Menu window
-        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("StudentLeaderboard")){
+        }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Student Leaderboard")){
             App.setRoot("StudentLeaderboard");// go to the Student Leaderboard window
         }else if(windowChoiceBox.getSelectionModel().getSelectedItem().toString().equals("Tutor Data Menu")) {
             App.setRoot("TutorDataMenu"); // go to the Tutor Data Menu window
