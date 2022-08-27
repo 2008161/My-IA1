@@ -14,6 +14,20 @@
     "averageAttendanceGrade": 0
   },
   {
+    "name": "Javier",
+    "school": "San Ignacio",
+    "tutor": "Patrick",
+    "grade": 4,
+    "age": 13,
+    "sessions": 1,
+    "grades": [],
+    "characteristics": [],
+    "averagePerformanceGrade": 0,
+    "averageDisciplineGrade": 0,
+    "averageEngagementGrade": 0,
+    "averageAttendanceGrade": 0
+  },
+  {
     "name": "Name",
     "school": "School",
     "tutor": "Tutor",
@@ -28,11 +42,11 @@
     "averageAttendanceGrade": 0
   },
   {
-    "name": "Javier",
-    "school": "San Ignacio",
-    "tutor": "Patrick",
+    "name": "Juan",
+    "school": "Rinconada",
+    "tutor": "Diego",
     "grade": 4,
-    "age": 13,
+    "age": 8,
     "sessions": 1,
     "grades": [],
     "characteristics": [],

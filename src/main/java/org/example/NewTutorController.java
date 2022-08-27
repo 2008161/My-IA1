@@ -48,12 +48,11 @@ public class NewTutorController {
             }
             ntTutorTable.setItems(App.tutors);
 
-            /**
              ntTutorTable.setRowFactory(rowClick -> {
              TableRow<Tutor> row = new TableRow<>();
              row.setOnMouseClicked(event -> {
              if (!row.isEmpty() && event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
-             Student clickedRow = row.getItem();
+             Tutor clickedRow = row.getItem();
              //when the user double clicks over a specific cell belonging to a row and column, it will get the item belonging to such space
              ntNameTxtBox.setText(clickedRow.getName());
              ntSchoolTxtBox.setText(clickedRow.getSchool());
@@ -67,7 +66,7 @@ public class NewTutorController {
              });
              return rowClick;
              });
-             **/
+
         }
 
         private void loadTutors() throws IOException {

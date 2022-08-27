@@ -32,8 +32,6 @@ public class NewStudentController {
     public void initialize() throws IOException {
         //Start doing the process as soon as the window opens
 
-
-
         studentName.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
         studentName.setPrefWidth(50);
         studentName.setSortable(false);
@@ -49,27 +47,30 @@ public class NewStudentController {
 
 
         nsStudentTable.setRowFactory(rowClick -> {
-            TableRow<Student> row = new TableRow<>();
-            row.setOnMouseClicked(event -> {
-                if (!row.isEmpty() && event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
-                    Student clickedRow = row.getItem();
-                    //when the user double clicks over a specific cell belonging to a row and column, it will get the item belonging to such space
-                    nsNameTxtBox.setText(clickedRow.getName());
-                    nsSchoolTxtBox.setText(clickedRow.getSchool());
-                    nsGradeTxtBox.setText(Integer.toString(clickedRow.getGrade()));
-                    nsTutorTxtBox.setText(clickedRow.getTutor());
-                    nsAgeTxtBox.setText(Integer.toString(clickedRow.getAge()));
-                    nsSessionsTxtBox.setText(Integer.toString(clickedRow.getSessions()));
-                    //the method includes each of the different possible cells as all the different rows are included in the method
-                    //https://docs.oracle.com/javafx/2/events/convenience_methods.htm
-                }
+            TableView<Student> table = new TableView<>();
+            table.setRowFactory(tv -> {
+
+                TableRow<Student> row = new TableRow<>();
+                row.setOnMouseClicked(event -> {
+                    if (!row.isEmpty() && event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
+                        Student clickedRow = row.getItem();
+                        //when the user double clicks over a specific cell belonging to a row and column, it will get the item belonging to such space
+                        nsNameTxtBox.setText(clickedRow.getName());
+                        nsSchoolTxtBox.setText(clickedRow.getSchool());
+                        nsGradeTxtBox.setText(Integer.toString(clickedRow.getGrade()));
+                        nsTutorTxtBox.setText(clickedRow.getTutor());
+                        nsAgeTxtBox.setText(Integer.toString(clickedRow.getAge()));
+                        nsSessionsTxtBox.setText(Integer.toString(clickedRow.getSessions()));
+                        //the method includes each of the different possible cells as all the different rows are included in the method
+                        //https://docs.oracle.com/javafx/2/events/convenience_methods.htm
+                    }
+
+                });
+                return row;
             });
-            return rowClick;
-        });
 
+        }
     }
-
-
 
     public void SaveBtn(ActionEvent actionEvent) {
 
