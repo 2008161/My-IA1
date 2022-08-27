@@ -1,19 +1,5 @@
 [
   {
-    "name": "Hugo",
-    "school": "Newton",
-    "tutor": "Matt",
-    "grade": 8,
-    "age": 18,
-    "sessions": 1,
-    "grades": [],
-    "characteristics": [],
-    "averagePerformanceGrade": 0,
-    "averageDisciplineGrade": 0,
-    "averageEngagementGrade": 0,
-    "averageAttendanceGrade": 0
-  },
-  {
     "name": "Javier",
     "school": "San Ignacio",
     "tutor": "Patrick",
